@@ -2,7 +2,7 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-akbaruir.cfapps.io
+  - route: registration-pal-akbarui.cfapps.io
   memory: 1G
   instances: 1
   env:

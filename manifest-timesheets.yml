@@ -2,11 +2,11 @@ applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
-  - route: timesheets-pal-akbaruit.cfapps.io
+  - route: timesheets-pal-akbarui.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://pal-tracker-akbaruit.cfapps.io/time-entries
+    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-akbarui.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-timesheets-database
