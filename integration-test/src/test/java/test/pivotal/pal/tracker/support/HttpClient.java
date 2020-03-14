@@ -13,7 +13,7 @@ public class HttpClient {
 
     //private final OkHttpClient okHttp = new OkHttpClient();
 
-    private final OkHttpClient okHttp = new OkHttpClient.Builder().connectTimeout(60,TimeUnit.SECONDS).writeTimeout(60, TimeUnit.SECONDS).readTimeout(60, TimeUnit.SECONDS).build();
+    private final OkHttpClient okHttp = new OkHttpClient.Builder().connectTimeout(500,TimeUnit.SECONDS).writeTimeout(500, TimeUnit.SECONDS).readTimeout(500, TimeUnit.SECONDS).build();
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public Response get(String url) {
